@@ -7,7 +7,7 @@
     tools:background="@drawable/main_background">
 
     <ImageView
-        android:id="@+id/hadeth_image"
+        android:id="@+id/header_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -24,6 +24,6 @@
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hadeth_image"
+        app:layout_constraintTop_toBottomOf="@id/header_image"
         tools:listitem="@layout/item_chapter_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
