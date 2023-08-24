@@ -20,7 +20,6 @@ class VersesAdapter(private val verses: List<String>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.content.text =
             verses[position]
-
     }
 
     override fun getItemCount(): Int = verses.size
