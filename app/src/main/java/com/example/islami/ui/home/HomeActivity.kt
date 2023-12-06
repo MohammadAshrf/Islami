@@ -1,8 +1,7 @@
 package com.example.islami.ui.home
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.islami.R
 import com.example.islami.databinding.ActivityHomeBinding
@@ -10,7 +9,6 @@ import com.example.islami.ui.home.tabs.hadeth.HadethFragment
 import com.example.islami.ui.home.tabs.quran.QuranFragment
 import com.example.islami.ui.home.tabs.radio.RadioFragment
 import com.example.islami.ui.home.tabs.tasbeh.TasbehFragment
-import com.google.android.material.navigation.NavigationBarView
 
 class HomeActivity : AppCompatActivity() {
     lateinit var viewBinding: ActivityHomeBinding
@@ -18,6 +16,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+
         viewBinding.content.bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_quran -> {

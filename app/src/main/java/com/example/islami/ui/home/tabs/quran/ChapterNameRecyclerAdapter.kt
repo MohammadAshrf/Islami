@@ -2,8 +2,6 @@ package com.example.islami.ui.home.tabs.quran
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Adapter
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islami.databinding.ItemChapterNameBinding
 
@@ -31,7 +29,7 @@ class ChapterNameRecyclerAdapter(private val names: List<String>) :
 
     var onItemClickListener: OnItemClickListener? =null
     fun interface OnItemClickListener{
-        fun onItemClick(position: Int,names: String)
+        fun onItemClick(position: Int, name: String)
 
     }
 
