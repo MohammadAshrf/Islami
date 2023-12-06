@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:background="@drawable/main_background">
+
+    <ImageView
+        android:id="@+id/head_of_sebha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/head_of_sebha"
+        app:layout_constraintEnd_toEndOf="@+id/body_of_sebha"
+        app:layout_constraintStart_toStartOf="@+id/body_of_sebha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/body_of_sebha"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/body_of_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head_of_sebha" />
+
+    <TextView
+        android:id="@+id/tasbeh_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/tasbeh_count"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/body_of_sebha"
+        app:layout_constraintStart_toStartOf="@+id/body_of_sebha"
+        app:layout_constraintTop_toBottomOf="@+id/body_of_sebha" />
+
+    <TextView
+        android:id="@+id/tasbeh_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/tasbeh_count_shape"
+        android:padding="25dp"
+        android:text="@string/tasbeh_count_text"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@id/tasbeh_count_tv"
+        app:layout_constraintStart_toStartOf="@id/tasbeh_count_tv"
+        app:layout_constraintTop_toBottomOf="@id/tasbeh_count_tv" />
+
+    <TextView
+        android:id="@+id/convert_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/tasbeh_count_shape"
+        android:text="@string/sobhan_allah"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tasbeh_counter"
+        app:layout_constraintStart_toStartOf="@id/tasbeh_counter"
+        app:layout_constraintTop_toBottomOf="@id/tasbeh_counter"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
